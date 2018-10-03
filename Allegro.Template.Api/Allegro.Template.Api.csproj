@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Allegro.Template.Contract\Allegro.Template.Contract.csproj" />
+    <ProjectReference Include="..\Allegro.Template.Controller\Allegro.Template.Controller.csproj" />
+    <ProjectReference Include="..\Allegro.Template.Data\Allegro.Template.Data.csproj" />
+    <ProjectReference Include="..\Allegro.Template.Domain\Allegro.Template.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Allegro.Framework">
+      <HintPath>..\..\Allegro.Framework\Allegro.Framework\bin\Debug\netcoreapp2.1\Allegro.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
